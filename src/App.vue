@@ -21,6 +21,6 @@ import { RouterView } from 'vue-router'
 
 body{
   background-color: #443022;
-  background-image: url("./background.png");
+  background-image: url("./assets/background.png");
 }
 </style>

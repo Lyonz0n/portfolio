@@ -1,8 +1,17 @@
 <script setup lang="ts">
+import PaperCard from '../components/PaperCard.vue'
 </script>
 
 <template>
-  <span class="text-xl font-bold">
-    Portefolio Louison !
-  </span>
+  <div class="w-full flex flex-row justify-center">
+    <div class="page-container">
+      <PaperCard></PaperCard>
+    </div>
+  </div>
 </template>
+
+<style scoped>
+.page-container {
+  width: 1300px;
+}
+</style>

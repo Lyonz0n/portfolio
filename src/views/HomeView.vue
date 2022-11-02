@@ -5,7 +5,8 @@ import PaperCard from '../components/PaperCard.vue'
 <template>
   <div class="w-full flex flex-row justify-center">
     <div class="page-container">
-      <PaperCard></PaperCard>
+        <PaperCard></PaperCard>
+        <PaperCard></PaperCard>
     </div>
   </div>
 </template>

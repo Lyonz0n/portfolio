@@ -1,0 +1,14 @@
+.parchment {
+    top: 0%; left: 50%; transform: translate(-50%, 0);
+    margin: 2em 0;
+    padding: 4em;
+    /*box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;*/
+    background: #fffef0;
+    box-shadow: 2px 3px 20px black,0 0 125px #8f5922 inset;
+    filter: url(#wavy2);
+}
+
+.custom-font {
+    font-family: "berry_rotunda";
+    line-height: 2em;
+}

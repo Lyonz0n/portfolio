@@ -4,7 +4,7 @@
     padding: 4em;
     /*box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;*/
     background: #fffef0;
-    box-shadow: 2px 3px 20px black,0 0 125px #8f5922 inset;
+    box-shadow: 8px 2px 15px rgba(0, 0, 0, 0.62),0 0 125px #8f5922 inset;
     filter: url(#wavy2);
 }
 

@@ -18,34 +18,36 @@ import PaperCard from '../components/PaperCard.vue'
 }
 #card-1 {
   z-index: 20;
-  transition: margin-top 0.25s;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.25s all ease;
 }
 
 #card-2 {
   z-index: 10;
-  transition: margin-left 0.25s,margin-top 0.25s;
   margin-top: 25px;
   margin-left: 25px;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.25s all ease;
 }
 
 #card-3 {
-  transition: margin-left 0.25s,margin-top 0.25s;
   margin-top: 45px;
   margin-left: -25px;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.25s all ease;
 }
 #card-1:hover {
-  margin-top: -10px;
+  transform: scale(1.2);
 }
 
 #card-1:hover ~ #card-2{
-  margin-top: 30px;
-  margin-left: 30px;
+  transform: scale(1.2);
 }
 
 #card-1:hover ~ #card-3{
-  margin-top: 55px;
+  transform: scale(1.2);
 }
 </style>

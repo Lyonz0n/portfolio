@@ -9,8 +9,8 @@ defineProps({
     default: ""
   },
   imagePath: {
-    type: Image,
-    default: null
+    type: String,
+    default: ""
   }
 })
 </script>

@@ -16,7 +16,7 @@ import { RouterView } from 'vue-router'
 @font-face {
   font-family: "berry_rotunda";
   src: local("berry_rotunda"),
-  url(./fonts/berry_rotunda.ttf) format("truetype");
+  url("/fonts/berry_rotunda.ttf") format("truetype");
 }
 
 body{

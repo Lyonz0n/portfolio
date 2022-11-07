@@ -2,37 +2,60 @@
 </script>
 
 <template>
-  <div class="frame flex flex-col">
-    <div class="frame-border-background frame-border-x"></div>
-    <div class="flex flex-row flex-auto">
-      <div class="frame-border-background frame-border-y"></div>
-      <div class="flex-auto frame-content"></div>
-      <div class="frame-border-background frame-border-y"></div>
-    </div>
-    <div class="frame-border-background frame-border-x"></div>
+  <div class="frame items-center flex flex-col gap-10">
+    <span class="text-4xl custom-font">Wanted</span>
+    <img style="margin-right: 30px" src="@/assets/knight.png" />
+    <span class="text-3xl custom-font">Louison Martin</span>
+
   </div>
 </template>
 
 <style scoped>
 .frame {
+  background-color: #fffef0;
+  border: solid 5vmin #553C2A;
+  border-bottom-color: #5e432e;
+  border-left-color: #553C2A;
+  border-radius: 2px;
+  border-right-color: #553C2A;
+  border-top-color: #4d3627;
+  box-shadow:0 0 125px #8f5922 inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  margin: 10vh 10vw;
   width: 600px;
   height: 700px;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.62);
+  padding: 3rem;
+  position: relative;
+  text-align: center;
+  animation: wave ease-in-out 1s 1 alternate;
 }
 
-.frame-content {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.80) inset;
-}
-.frame-border-background {
-  background-color: #221812;
-}
-.frame-border-x {
-  height: 50px;
-  width: 100%;
+.frame:before {
+   border-radius:2px;
+   bottom:-2vmin;
+   box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+   content:"";
+   left:-2vmin;
+   position:absolute;
+   right:-2vmin;
+   top:-2vmin;
 }
 
-.frame-border-y {
-  width: 50px;
-  height: 100%;
+frame:after {
+   border-radius:2px;
+   bottom:-2.5vmin;
+   box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+   content:"";
+   left:-2.5vmin;
+   position:absolute;
+   right:-2.5vmin;
+   top:-2.5vmin;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  33% { transform: rotate(5deg); }
+  66% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 </style>

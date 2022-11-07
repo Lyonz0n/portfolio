@@ -27,7 +27,7 @@
   padding: 3rem;
   position: relative;
   text-align: center;
-  animation: wave ease-in-out 1s 1 alternate;
+  animation: wave ease-in-out 2s 1 alternate;
 }
 
 .frame:before {
@@ -54,8 +54,10 @@ frame:after {
 
 @keyframes wave {
   0% { transform: rotate(0deg); }
-  33% { transform: rotate(5deg); }
-  66% { transform: rotate(-5deg); }
+  20% { transform: rotate(8deg); }
+  40% { transform: rotate(-8deg); }
+  60% { transform: rotate(5deg); }
+  80% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
 </style>

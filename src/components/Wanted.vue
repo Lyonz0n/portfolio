@@ -19,7 +19,6 @@
   width: 600px;
   height: 700px;
   padding: 3rem;
-  position: relative;
   text-align: center;
   /*animation: wave ease-in-out 2s 1 alternate;*/
   border-radius: 3% 3% 50% 50%;

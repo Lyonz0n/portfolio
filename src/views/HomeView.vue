@@ -5,10 +5,14 @@ import Wanted from "@/components/Wanted.vue";
 
 <template>
   <div class="w-full flex flex-row">
-    <div class="w-1/2 p-10"><Wanted /></div>
+    <div class="w-1/2 p-10"><Wanted class="fixed"/></div>
     <div class="w-1/2 flex flex-col items-center justify-center">
       <GameCard id="game-1"/>
       <GameCard id="game-2"/>
+      <GameCard id="game-3"/>
+      <GameCard id="game-4"/>
+      <GameCard id="game-5"/>
+      <GameCard id="game-6"/>
     </div>
   </div>
 </template>
@@ -18,6 +22,18 @@ import Wanted from "@/components/Wanted.vue";
   margin-right: 100px;
 }
 #game-2 {
+  margin-left: 100px;
+}
+#game-3 {
+  margin-right: 200px;
+}
+#game-4 {
+  margin-left: 0;
+}
+#game-5 {
+  margin-right: 180px;
+}
+#game-6 {
   margin-left: 100px;
 }
 </style>

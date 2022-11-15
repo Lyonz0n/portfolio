@@ -5,8 +5,8 @@ import Wanted from "@/components/Wanted.vue";
 
 <template>
   <div class="w-full flex flex-row">
-    <div class="w-1/2 p-10"><Wanted class="fixed"/></div>
-    <div class="w-1/2 flex flex-col items-center justify-center">
+    <div class="flex-none"><Wanted/></div>
+    <div class="flex-auto flex flex-col items-center justify-center">
       <GameCard id="game-1"/>
       <GameCard id="game-2"/>
       <GameCard id="game-3"/>
@@ -19,7 +19,7 @@ import Wanted from "@/components/Wanted.vue";
 
 <style scoped>
 #game-1 {
-  margin-right: 100px;
+  margin-left: 0;
 }
 #game-2 {
   margin-left: 100px;

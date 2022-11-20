@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import GameCard from "@/components/GameCard.vue";
 import Wanted from "@/components/Wanted.vue";
+import ContactBtn from "@/components/ContactBtn.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Wanted from "@/components/Wanted.vue";
     <div class="flex-1 flex flex-col items-center justify-center">
       <GameCard title="Projets" image-path="./images/idea.png"/>
       <GameCard title="Références" image-path="./images/reference.png"/>
+      <ContactBtn  class="mt-20"/>
     </div>
   </div>
 </template>

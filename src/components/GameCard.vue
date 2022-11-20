@@ -1,10 +1,21 @@
 <script setup lang="ts">
 import PaperCard from '../components/PaperCard.vue'
+
+defineProps({
+  title: {
+    type: String,
+    default: ""
+  },
+  imagePath: {
+    type: String,
+    default: ""
+  }
+})
 </script>
 
 <template>
   <div class="game-card-container">
-    <div id="card-1" class="absolute"><PaperCard title="Kingdom Rivality" description="Jeu de stratégie en 1v1. Aurez la puissance nécessaire pour détruire votre adversaire et conquérir le trone ?" image-path="./images/castle.png"/></div>
+    <div id="card-1" class="absolute"><PaperCard :title="title" :image-path="imagePath"/></div>
     <div id="card-2" class="absolute move"><PaperCard/></div>
     <div id="card-3" class="absolute"><PaperCard/></div>
   </div>

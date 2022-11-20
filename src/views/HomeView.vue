@@ -4,36 +4,18 @@ import Wanted from "@/components/Wanted.vue";
 </script>
 
 <template>
-  <div class="w-full flex flex-row">
-    <div class="flex-none"><Wanted/></div>
-    <div class="flex-auto flex flex-col items-center justify-center">
-      <GameCard id="game-1"/>
-      <GameCard id="game-2"/>
-      <GameCard id="game-3"/>
-      <GameCard id="game-4"/>
-      <GameCard id="game-5"/>
-      <GameCard id="game-6"/>
+  <div class="app-container flex flex-row">
+    <div class="flex-1 flex flex-col items-center justify-center"><Wanted/></div>
+    <div class="flex-1 flex flex-col items-center justify-center">
+      <GameCard title="Projects" image-path="./images/idea.png"/>
+      <GameCard title="Références" image-path="./images/reference.png"/>
     </div>
   </div>
 </template>
 
 <style scoped>
-#game-1 {
-  margin-left: 0;
-}
-#game-2 {
-  margin-left: 100px;
-}
-#game-3 {
-  margin-right: 200px;
-}
-#game-4 {
-  margin-left: 0;
-}
-#game-5 {
-  margin-right: 180px;
-}
-#game-6 {
-  margin-left: 100px;
+.app-container {
+  width: 100%;
+  height: 100vh;
 }
 </style>

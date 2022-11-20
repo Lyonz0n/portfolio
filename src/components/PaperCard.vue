@@ -4,10 +4,6 @@ defineProps({
     type: String,
     default: ""
   },
-  description: {
-    type: String,
-    default: ""
-  },
   imagePath: {
     type: String,
     default: ""
@@ -19,11 +15,10 @@ defineProps({
   <div class="relative paper-card-container">
     <div class="parchment w-full h-full relative">
     </div>
-    <div class="absolute top-0 custom-font px-6 pt-10 flex flex-row items-center gap-5">
+    <div class="absolute top-0 custom-font px-12 pt-12 flex flex-row items-center gap-5">
       <img class="image" v-if="imagePath" :src="imagePath" />
       <div class="flex flex-col">
-        <span class="text-2xl">{{title}}</span>
-        <span class="text-sm">{{description}}</span>
+        <span class="text-4xl">{{title}}</span>
       </div>
     </div>
   </div>
@@ -36,7 +31,7 @@ defineProps({
 }
 
 .image {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: auto;
 }
 </style>

@@ -6,11 +6,13 @@ import ContactBtn from "@/components/ContactBtn.vue";
 
 <template>
   <div class="app-container flex flex-row">
-    <div class="flex-1 flex flex-col items-center justify-center"><Wanted/></div>
+    <div class="flex-1 flex flex-col items-center justify-center">
+      <Wanted/>
+      <ContactBtn class="mt-28"/>
+    </div>
     <div class="flex-1 flex flex-col items-center justify-center">
       <GameCard title="Projets" image-path="./images/idea.png"/>
       <GameCard title="Références" image-path="./images/reference.png"/>
-      <ContactBtn  class="mt-20"/>
     </div>
   </div>
 </template>

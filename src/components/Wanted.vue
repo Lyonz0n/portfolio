@@ -28,7 +28,7 @@
 
 .frame-container {
   position: relative;
-  top: 5vh;
+  top: 60px;
   transform-origin: 50% 0%;
   animation: wave ease-in-out 2s 1 alternate;
 }

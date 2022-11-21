@@ -8,7 +8,7 @@ import ContactBtn from "@/components/ContactBtn.vue";
   <div class="app-container flex flex-row">
     <div class="flex-1 flex flex-col items-center justify-center">
       <Wanted/>
-      <ContactBtn class="mt-28"/>
+      <ContactBtn class="mt-24"/>
     </div>
     <div class="flex-1 flex flex-col items-center justify-center">
       <GameCard title="Projets" image-path="./images/idea.png"/>
